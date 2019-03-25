@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 from http.server import BaseHTTPRequestHandler,HTTPServer
 
 PORT_NUMBER = 8080
@@ -9,6 +9,9 @@ class myHandler(BaseHTTPRequestHandler):
     # Handler for the GET requests
     def do_GET(self):
         print('Get request received')
+        self.send_response(200)
+        self.send_header('Content-type','text/html')
+        self.end_headers()
         # Send the html message
         self.wfile.write("Hello World !".encode())
         return

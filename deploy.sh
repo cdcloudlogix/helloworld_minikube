@@ -13,6 +13,9 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+# Make sure to run docker with Minikube
+eval $(minikube docker-env)
+
 RESET_COLOR="\033[0m"
 RED_COLOR="\033[0;31m"
 GREEN_COLOR="\033[0;32m"
@@ -54,7 +57,7 @@ function create_deployment() {
   blue_color
   echo "Create deployment..."
   green_color
-  kubectl get deployments hello-node || kubectl create deployment hello-node --image=hello-world-python
+  kubectl get deployments hello-node || kubectl run hello-node --replicas=2 --image=hello-world-python:latest --port=8080 --image-pull-policy=Never
   reset_color
   separator
   sleep 1
