@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Preinstall HelloMinikube.
-#title          :preinstall.sh
+# Deploy HelloMinikube.
+#title          :deploy.sh
 #description    :This script will install Minikube is installed on Mac / Linux
 #author         :Oli
-#date           :24/03/2019
+#date           :25/03/2019
 #version        :0.1
-#usage          :bash <(curl -s https://raw.githubusercontent.com/obutterbach/helloworld_minikube/blob/master/preinstall.sh)
+#usage          :bash <(curl -s https://raw.githubusercontent.com/obutterbach/helloworld_minikube/blob/master/deploy.sh)
 #bash_version   :3.2.57(1)-release
 #===================================================================================
 
