@@ -6,6 +6,7 @@ and then deploy in Minikube, which is a local Kubernetes cluster.
 This is running **exclusively** on MacOS (Linux supports coming soon!)
 
 ## News
+* 2019-03-26 - v0.0.2 released! [[download](https://github.com/obutterbach/helloworld_minikube/releases/tag/v0.0.1)]
 * 2019-03-25 - v0.0.1 released! [[download](https://github.com/obutterbach/helloworld_minikube/releases/tag/v0.0.1)]
 
 ## Quick Start
